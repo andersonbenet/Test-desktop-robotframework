@@ -2,8 +2,9 @@
 Documentation    Demo App Legado
 Library  Process
 Library  SikuliLibrary     mode=NEW
+Library  String
 Suite Setup        Start Sikuli Process
-Suite Teardown     Stop Remote Server
+#Suite Teardown     Stop Remote Server
 
 Resource  ../resource/TC-PromptResource.robot
 
@@ -17,3 +18,4 @@ Resource  ../resource/TC-PromptResource.robot
 TC002-Start App SIAC
     Carregar diretório de imagens
     Abrir App SIAC
+    Navegar Page
