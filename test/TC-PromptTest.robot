@@ -15,7 +15,7 @@ Resource  ../resource/TC-PromptResource.robot
 #    Abrir App SACG
 
 
-TC002-Start App SIAC
+TC002-Gerar Relatório Tradição - SIAC
     Carregar diretório de imagens
     Abrir App SIAC
-    Navegar Page
+    Gerar Relatório Tradição

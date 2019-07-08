@@ -29,7 +29,7 @@ ${image_dir}=      ${CURDIR}\\img
 #    Press Special Key  ENTER
 
 ########################################################
-#TC002-Start App SIAC
+#TC002-Gerar Relatório Tradição - SIAC
 ########################################################
 Carregar diretório de imagens
     Add Image Path  ${image_dir}
@@ -45,11 +45,12 @@ Abrir App SIAC
     Press Special Key  ENTER
 
     Input text	logar_siac.png  teste123
+
     Press Special Key  ENTER
     Wait Until Screen Contain  home_siac.png  60
     Press Special Key  ENTER
 
-Navegar Page
+Gerar Relatório Tradição
     ${characters}=  Set Variable  FFC
     ${count_menu}=  Get length  ${characters}
     ${menu}=  Get Substring	${characters}	0	1
@@ -61,7 +62,7 @@ Navegar Page
         ${count_aux}=  Evaluate  ${count}+1
         ${aux}=  Get Substring	${characters}	${count}  ${count_aux}
 
-        Set Wait Scan Rate  60
+        Set Wait Scan Rate  90
         #        Screen Should Contain  menu_siac.png
         Input text	menu_siac.png  ${aux}
     END
