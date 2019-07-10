@@ -4,18 +4,18 @@ Library  Process
 Library  SikuliLibrary     mode=NEW
 Library  String
 Suite Setup        Start Sikuli Process
-#Suite Teardown     Stop Remote Server
+Suite Teardown     Stop Remote Server
 
 Resource  ../resource/TC-PromptResource.robot
 
 
 *** Test Cases ***
-#TC001-Start App SACG
-#    Carregar diretório de imagens
-#    Abrir App SACG
-
-
-TC002-Gerar Relatório Tradição - SIAC
+TC001-Start App SACG
     Carregar diretório de imagens
-    Abrir App SIAC
-    Gerar Relatório Tradição
+    Abrir App SACG
+
+
+#TC002-Gerar Relatório Tradição - SIAC
+#    Carregar diretório de imagens
+#    Abrir App SIAC
+#    Gerar Relatório Tradição
